@@ -1,0 +1,94 @@
+.tuner-container {
+  text-align: center;
+  font-family: sans-serif;
+  margin-top: 60px;;
+}
+
+.needle.no-signal {
+  background-color: #aaa;
+  opacity: 0.5;
+}
+
+.tuner-title {
+  font-size: 4.5rem;
+}
+
+.tuner-pitch {
+  font-size: 2.5rem;
+}
+
+.note-text {
+    display: inline-block;
+    width: 3ch;
+    text-align: center;
+}
+
+.tuner-frequency {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.needle-wrapper {
+  position: relative;
+  height: 150px;
+  margin-top: 50px;
+  transform: scale(1.5);
+}
+
+.needle {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 4px;
+  height: 80px;
+  background-color: red;
+  transform-origin: bottom center;
+  transition: transform 0.1s ease-out;
+}
+
+.needle.in-tune {
+  background-color: green;
+}
+
+.center-line {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 3px;
+  height: 90px;
+  background-color: #ccc;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.tick {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background-color: #999;
+  transform-origin: bottom center;
+}
+
+.tick.major {
+  height: 25px;
+  width: 2px;
+}
+
+.tick.minor {
+  height: 20px;
+  opacity: 0.5;
+}
+
+.tick-label {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-origin: bottom center;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.tuner-cents {
+  margin-top: 10px;
+}
